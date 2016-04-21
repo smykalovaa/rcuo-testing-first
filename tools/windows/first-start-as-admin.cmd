@@ -3,7 +3,7 @@
 @choco install curl -y
 @choco install unzip -y
 
-@curl -o env-install.cmd -sSL https://raw.githubusercontent.com/silverbulleters/vanessa-bootstrap/master/tools/windows/env-install.cmd
+@curl -o env-install.cmd -skSL https://raw.githubusercontent.com/silverbulleters/vanessa-bootstrap/master/tools/windows/env-install.cmd
 @env-install
 
-@curl -o env-upgrade.cmd -sSL https://raw.githubusercontent.com/silverbulleters/vanessa-bootstrap/master/tools/windows/env-upgrade.cmd
+@curl -o env-upgrade.cmd -skSL https://raw.githubusercontent.com/silverbulleters/vanessa-bootstrap/master/tools/windows/env-upgrade.cmd
