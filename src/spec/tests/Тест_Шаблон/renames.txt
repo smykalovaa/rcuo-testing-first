@@ -1,0 +1,7 @@
+﻿57458469-62ac-4474-8194-ad279a7cdf2e-->und\57458469-62ac-4474-8194-ad279a7cdf2e
+bfeca937-64c4-49df-9316-3d7b1878cd4e.0\info-->und\bfeca937-64c4-49df-9316-3d7b1878cd4e.0\info
+bfeca937-64c4-49df-9316-3d7b1878cd4e.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
