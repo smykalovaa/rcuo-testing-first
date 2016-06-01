@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНачисленийВПределахНормы</dataPath>
+				<field>СуммаНачисленийВПределахНормы</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НаОбщедомовыеНужды</dataPath>
+				<field>НаОбщедомовыеНужды</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаСубсидий</dataPath>
+				<field>СуммаСубсидий</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидТарифа</dataPath>
+				<field>ВидТарифа</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоСверхНормы</dataPath>
+				<field>КоличествоСверхНормы</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерСтроки</dataPath>
+				<field>НомерСтроки</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПерерасчетаЗаКачество</dataPath>
+				<field>СуммаПерерасчетаЗаКачество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Тариф</dataPath>
+				<field>Тариф</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидНачисления</dataPath>
+				<field>ВидНачисления</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УК</dataPath>
+				<field>УК</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидПерерасчета</dataPath>
+				<field>ВидПерерасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Активность</dataPath>
+				<field>Активность</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВПределахНормы</dataPath>
+				<field>КоличествоВПределахНормы</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчета</dataPath>
+				<field>ВидРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдиницаИзмерения</dataPath>
+				<field>ЕдиницаИзмерения</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаНачислений</dataPath>
+				<field>СуммаНачислений</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЛицевойСчет</dataPath>
+				<field>ЛицевойСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидНормы</dataPath>
+				<field>ВидНормы</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодЗадолженности</dataPath>
+				<field>ПериодЗадолженности</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипОперации</dataPath>
+				<field>ТипОперации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдиницаРасчета</dataPath>
+				<field>ЕдиницаРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТарифПревышения</dataPath>
+				<field>ТарифПревышения</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаЛьгот</dataPath>
+				<field>СуммаЛьгот</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сторно</dataPath>
+				<field>Сторно</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Поставщик</dataPath>
+				<field>Поставщик</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Период</dataPath>
+				<field>Период</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">3</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ркНачисления.Период,
+	ркНачисления.Регистратор,
+	ркНачисления.НомерСтроки,
+	ркНачисления.Активность,
+	ркНачисления.УК,
+	ркНачисления.ТипОперации,
+	ркНачисления.ВидНачисления,
+	ркНачисления.ПериодЗадолженности,
+	ркНачисления.ЛицевойСчет,
+	ркНачисления.ВидРасчета,
+	ркНачисления.ВидПерерасчета,
+	ркНачисления.Поставщик,
+	ркНачисления.ЕдиницаИзмерения,
+	ркНачисления.ВидТарифа,
+	ркНачисления.Тариф,
+	ркНачисления.ТарифПревышения,
+	ркНачисления.ВидНормы,
+	ркНачисления.ЕдиницаРасчета,
+	ркНачисления.НаОбщедомовыеНужды,
+	ркНачисления.СуммаНачислений,
+	ркНачисления.СуммаЛьгот,
+	ркНачисления.КоличествоВПределахНормы,
+	ркНачисления.КоличествоСверхНормы,
+	ркНачисления.СуммаСубсидий,
+	ркНачисления.СуммаНачисленийВПределахНормы,
+	ркНачисления.СуммаПерерасчетаЗаКачество,
+	//ркНачисления.Норма,
+	ркНачисления.Сторно
+ИЗ
+	РегистрНакопления.ркНачисления КАК ркНачисления
+ГДЕ
+	ркНачисления.Регистратор = &amp;Регистратор
+	//И ркНачисления.ВидРасчета = &amp;ВидРасчета</query>
+		</dataSet>
+		<parameter>
+			<name>Регистратор</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Регистратор</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркНачисления</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ВидНачисления</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидНормы</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидПерерасчета</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидРасчета</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидТарифа</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЕдиницаИзмерения</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЕдиницаРасчета</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоВПределахНормы</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоСверхНормы</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЛицевойСчет</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НаОбщедомовыеНужды</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НомерСтроки</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Норма</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Период</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПериодЗадолженности</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Поставщик</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Регистратор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Сторно</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаЛьгот</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНачислений</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаНачисленийВПределахНормы</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПерерасчетаЗаКачество</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаСубсидий</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Тариф</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТарифПревышения</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТипОперации</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>УК</field>
+		</item>
+	</selection>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
