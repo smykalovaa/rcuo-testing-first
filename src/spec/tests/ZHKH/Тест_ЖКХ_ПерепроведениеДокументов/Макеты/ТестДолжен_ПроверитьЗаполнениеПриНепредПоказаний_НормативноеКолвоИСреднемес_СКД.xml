@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчета</dataPath>
+				<field>ВидРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЛицевойСчет</dataPath>
+				<field>ЛицевойСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МетодРасчета</dataPath>
+				<field>МетодРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаОкончанияПоказаний</dataPath>
+				<field>ДатаОкончанияПоказаний</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Счетчик</dataPath>
+				<field>Счетчик</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидПоказаний</dataPath>
+				<field>ВидПоказаний</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЕдиницаИзмерения</dataPath>
+				<field>ЕдиницаИзмерения</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаНачалаПоказаний</dataPath>
+				<field>ДатаНачалаПоказаний</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЛицевойСчетНаименование</dataPath>
+				<field>ЛицевойСчетНаименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МетодРасчетаПорядок</dataPath>
+				<field>МетодРасчетаПорядок</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СчетчикНаименование</dataPath>
+				<field>СчетчикНаименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчетаНаименование</dataPath>
+				<field>ВидРасчетаНаименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидПоказанийНаименование</dataPath>
+				<field>ВидПоказанийНаименование</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.Ссылка,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ЛицевойСчет,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ВидРасчета,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.Счетчик,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ВидПоказаний,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.Количество,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ДатаНачалаПоказаний,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ДатаОкончанияПоказаний,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.МетодРасчета,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ЕдиницаИзмерения,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ЛицевойСчет.Наименование,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ВидРасчета.Наименование,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.Счетчик.Наименование,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.ВидПоказаний.Наименование,
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.МетодРасчета.Порядок
+ИЗ
+	Документ.ркНачисленияПриНепредоставленииПоказанийСчетчиков.Состав КАК ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав
+ГДЕ
+	ркНачисленияПриНепредоставленииПоказанийСчетчиковСостав.Ссылка В(&amp;пРегистраторы)</query>
+		</dataSet>
+		<parameter>
+			<name>пРегистраторы</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>П регистраторы</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркНачисленияПриНепредоставленииПоказанийСчетчиков</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Ссылка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЛицевойСчет</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидРасчета</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Счетчик</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидПоказаний</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Количество</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДатаНачалаПоказаний</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДатаОкончанияПоказаний</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>МетодРасчета</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЕдиницаИзмерения</field>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>пРегистраторы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>5e5ccf1f-bcc7-4edd-baeb-cefd8903f505</userSettingID>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ЛицевойСчетНаименование</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ВидРасчетаНаименование</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>СчетчикНаименование</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ВидПоказанийНаименование</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>МетодРасчетаПорядок</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
