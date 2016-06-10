@@ -175,6 +175,10 @@
 			<field>МетодРасчетаПорядок</field>
 			<orderType>Asc</orderType>
 		</item>
+		<item xsi:type="OrderItemField">
+			<field>Количество</field>
+			<orderType>Asc</orderType>
+		</item>
 	</order>
 	<outputParameters>
 		<dcscor:item xsi:type="SettingsParameterValue">
