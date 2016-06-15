@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЛицевойСчет</dataPath>
+				<field>ЛицевойСчет</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчета</dataPath>
+				<field>ВидРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УК</dataPath>
+				<field>УК</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЛицевойСчетНаименование</dataPath>
+				<field>ЛицевойСчетНаименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчетаНаименование</dataPath>
+				<field>ВидРасчетаНаименование</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПониженияЗаКачество</dataPath>
+				<field>СуммаПониженияЗаКачество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Операция</dataPath>
+				<field>Операция</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Часы</dataPath>
+				<field>Часы</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПроцентПониженияТарифаКоличества</dataPath>
+				<field>ПроцентПониженияТарифаКоличества</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КонецДействия</dataPath>
+				<field>КонецДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Дни</dataPath>
+				<field>Дни</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПонижения</dataPath>
+				<field>СуммаПонижения</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НачалоДействия</dataPath>
+				<field>НачалоДействия</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасчетныйПериод</dataPath>
+				<field>РасчетныйПериод</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОтражатьВЗадолженностиПоЛицевымСчетам</dataPath>
+				<field>ОтражатьВЗадолженностиПоЛицевымСчетам</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ркНепредоставлениеУслуг.Регистратор,
+	ркНепредоставлениеУслуг.РасчетныйПериод,
+	ркНепредоставлениеУслуг.УК,
+	ркНепредоставлениеУслуг.ЛицевойСчет,
+	ркНепредоставлениеУслуг.ВидРасчета,
+	ркНепредоставлениеУслуг.Операция,
+	ркНепредоставлениеУслуг.ПроцентПониженияТарифаКоличества,
+	ркНепредоставлениеУслуг.ОтражатьВЗадолженностиПоЛицевымСчетам,
+	ркНепредоставлениеУслуг.Дни,
+	ркНепредоставлениеУслуг.Часы,
+	ркНепредоставлениеУслуг.СуммаПониженияЗаКачество,
+	ркНепредоставлениеУслуг.СуммаПонижения,
+	ркНепредоставлениеУслуг.НачалоДействия,
+	ркНепредоставлениеУслуг.КонецДействия,
+	ркНепредоставлениеУслуг.ЛицевойСчет.Наименование,
+	ркНепредоставлениеУслуг.ВидРасчета.Наименование
+ИЗ
+	РегистрНакопления.ркНепредоставлениеУслуг КАК ркНепредоставлениеУслуг
+ГДЕ
+	ркНепредоставлениеУслуг.Регистратор В(&amp;пРегистраторы)</query>
+		</dataSet>
+		<parameter>
+			<name>пРегистраторы</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>П регистраторы</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркПерерасчетИзЗаКачестваОтсутствияУслуг</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Регистратор</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РасчетныйПериод</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>УК</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЛицевойСчет</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидРасчета</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Операция</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПроцентПониженияТарифаКоличества</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтражатьВЗадолженностиПоЛицевымСчетам</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Дни</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Часы</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПониженияЗаКачество</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПонижения</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НачалоДействия</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КонецДействия</field>
+		</item>
+	</selection>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>пРегистраторы</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Регистратор</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>РасчетныйПериод</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ЛицевойСчетНаименование</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ВидРасчетаНаименование</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
