@@ -209,23 +209,11 @@
 			<orderType>Asc</orderType>
 		</item>
 		<item xsi:type="OrderItemField">
-			<field>ПериодДействия</field>
+			<field>Счетчик.Код</field>
 			<orderType>Asc</orderType>
 		</item>
 		<item xsi:type="OrderItemField">
 			<field>ЛицевойСчетНаименование</field>
-			<orderType>Asc</orderType>
-		</item>
-		<item xsi:type="OrderItemField">
-			<field>СчетчикНаименование</field>
-			<orderType>Asc</orderType>
-		</item>
-		<item xsi:type="OrderItemField">
-			<field>ВидПоказанийНаименование</field>
-			<orderType>Asc</orderType>
-		</item>
-		<item xsi:type="OrderItemField">
-			<field>ВидРасчетаНаименование</field>
 			<orderType>Asc</orderType>
 		</item>
 	</order>
