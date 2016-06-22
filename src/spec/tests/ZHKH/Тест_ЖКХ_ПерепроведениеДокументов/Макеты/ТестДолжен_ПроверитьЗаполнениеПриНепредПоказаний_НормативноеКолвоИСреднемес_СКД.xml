@@ -160,11 +160,11 @@
 			<orderType>Asc</orderType>
 		</item>
 		<item xsi:type="OrderItemField">
-			<field>ВидРасчетаНаименование</field>
+			<field>Счетчик.Код</field>
 			<orderType>Asc</orderType>
 		</item>
 		<item xsi:type="OrderItemField">
-			<field>СчетчикНаименование</field>
+			<field>ВидРасчетаНаименование</field>
 			<orderType>Asc</orderType>
 		</item>
 		<item xsi:type="OrderItemField">
