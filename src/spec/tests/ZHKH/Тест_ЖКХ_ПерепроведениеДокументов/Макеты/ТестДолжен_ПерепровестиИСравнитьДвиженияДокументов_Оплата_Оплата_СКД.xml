@@ -102,11 +102,11 @@
 				</d4p1:item>
 			</title>
 			<valueType>
-				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.рцПерераспределениеОплаты</Type>
 				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркЧекККМ</Type>
 				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркПерераспределениеОплаты</Type>
 				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркОплата</Type>
 				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.ркЧекККМВозврат</Type>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:DocumentRef.рцПерераспределениеОплаты</Type>
 			</valueType>
 			<value xsi:nil="true"/>
 			<useRestriction>true</useRestriction>
@@ -159,13 +159,6 @@
 			<field>СтрокаРеестраПлатежей</field>
 		</item>
 	</selection>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>пРегистраторы</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Регистратор</field>

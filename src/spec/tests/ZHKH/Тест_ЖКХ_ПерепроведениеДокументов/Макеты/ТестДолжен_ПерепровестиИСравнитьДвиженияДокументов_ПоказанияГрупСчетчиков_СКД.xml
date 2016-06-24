@@ -200,13 +200,6 @@
 			<field>ИсточникПоказаний</field>
 		</item>
 	</selection>
-	<dataParameters>
-		<dcscor:item xsi:type="SettingsParameterValue">
-			<dcscor:use>false</dcscor:use>
-			<dcscor:parameter>пРегистраторы</dcscor:parameter>
-			<dcscor:value xsi:nil="true"/>
-		</dcscor:item>
-	</dataParameters>
 	<order>
 		<item xsi:type="OrderItemField">
 			<field>Регистратор</field>
